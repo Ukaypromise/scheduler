@@ -10,6 +10,9 @@ export class TodoItem extends Component {
           onChange={() => this.props.handleChangeProps(this.props.todo.id)}
         />{" "}
         <li className="todoItem">{this.props.todo.title}</li>
+        <button onClick={() => this.props.deleteTodoProps(this.props.todo.id)}>
+          Delete
+        </button>
       </div>
     );
   }
